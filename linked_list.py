@@ -33,10 +33,10 @@ class linkedlist:
                  
 
 mylist=linkedlist()
-mylist.insert(10)
-mylist.insert(20)
-mylist.insert(30)
-mylist.insert(40)
+mylist.insertfirst(10)
+mylist.insertfirst(20)
+mylist.insertfirst(30)
+mylist.insertfirst(40)
 mylist.showlist()
 print()
 mylist.deletefirst()
