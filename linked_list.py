@@ -59,6 +59,16 @@ class linkedlist1:
                 temp = temp.next
             temp.next = None
         print("deleting last node")
+     
+    
+    def search(self, value):
+        temp = self.start
+
+        while temp.next != None:
+            if temp.data == value:
+                return 1
+            else:
+                temp = temp.next
 
 
 mylist = linkedlist1()
@@ -76,3 +86,9 @@ mylist.showlist()
 print()
 mylist.deletelast()
 mylist.showlist()
+print()
+search = mylist.search(int(input("what you want to search:")))
+if search == 1:
+    print("found")
+else:
+    print("not found")
